@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Contact Me</title>
+        <link href="styles.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <form>
+            <main>
+
+                <header>
+                    <h1>Contact Me</h1>
+                </header>
+
+                <div id="leftCol">
+                    <label for="contactName">Name*:
+                        <input type="text" name="contactName" id="contactName">
+                    </label>
+
+                    <label for="email">Email*:
+                        <input type="text" name="email" id="email">
+                    </label>
+
+                    <label for="phone">Phone:
+                        <input type="text" name="phone" id="phone" placeholder="(555) 555-5555">
+                    </label>
+
+
+                    <label id="reasonLabel" for="reasonSelect">What can I do for you?: </label>
+
+                    <select name="reasonSelect" id="reasonSelect">
+                        <option>General Question/Comment</option>
+                        <option>Work Inquiry</option>
+                        <option>Something Else</option>
+                    </select>
+                </div>
+
+                <div id="rightCol">
+                    <fieldset>
+                        <legend>Preferred Contact Method</legend>
+                        <p id="radioP">How would you like me to get back to you?</p>
+                        <p class="radio"><input type="radio" name="contactMethod" value="email" checked>by Email</p>
+                        <p class="radio"><input type="radio" name="contactMethod" value="call">by Phone</p>
+                        <p class="radio"><input type="radio" name="contactMethod" value="text">by Text</p>
+                        <p class="radio"><input type="radio" name="contactMethod" value="other">Other (Specify in Message)</p>
+                    </fieldset>
+                </div>
+
+                <div id="textField">
+                    <label for="messageText">Message*:</label>
+                    <textarea name="messageText" id="messageText"  rows="15"></textarea>
+
+                    <button type="submit" name="submitButton" id="submitButton">Send</button>
+                </div>
+
+            </main>
+        </form>
+    </body>
+</html>
