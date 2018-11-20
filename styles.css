@@ -3,33 +3,40 @@ body{
     flex-direction: column;
     /*justify-content: center;*/
 }
+h1, h2, p, label,input, select, legend, li, a{
+    font-family: sans-serif;
+    color: #58696a;
+}
 
 header{
-    background-color: darkorchid;
-    /*display: flex;*/
-    height: 20vh;
-    width: 100%;
+    background-image: radial-gradient( indigo, rebeccapurple);
+    display: flex;
+    height: 10vh;
     flex-direction: column;
-    align-items: flex-end;
+    flex-wrap: nowrap;
+    align-items:center;
+    justify-content: space-between;
     margin-bottom: 1vh;
 }
-header p{
+header h1{
+    font-family: "Arial Rounded MT Bold", "Times New Roman", sarif;
+    text-align: center;
+    color: lavender;
     width: 100%;
-
 }
 
 nav {
     background-color: rebeccapurple;
     height: 5vh;
     display: flex;
+    align-self: flex-end;
     width: 100%;
-    /*justify-content:center;*/
+
 }
 nav ul{
     width: 100%;
     display: flex;
     list-style-type: none;
-    justify-content: space-around;
     align-items: center;
     margin: 0;
     padding: 0;
@@ -40,13 +47,15 @@ nav li{
     width:25%;
     height: 5vh;
     justify-content: center;
+    margin: 0;
+    padding:0;
 }
 
 nav li:hover{
     background-color: indigo;
     cursor: pointer;
     opacity: 0.6;
-    transition: 0.4s;
+    transition: 0.8s;
 }
 
 li a {
@@ -66,10 +75,7 @@ form{
     justify-content: center;
 }
 
-h1, h2, p, label,input, select, legend, li, a{
-    font-family: sans-serif;
-    color: #58696a;
-}
+
 
 main{
     width:65%;
@@ -83,14 +89,14 @@ main{
 .formHeader {
     width: 100%;
     /*border: 2px solid rebeccapurple;*/
-    background-color: rebeccapurple;
-    border-radius: 4px;
-    margin-bottom: 2em;
+    /*background-color: rebeccapurple;*/
+    /*border-radius: 4px;*/
+    /*margin-bottom: 2em;*/
 }
 
-h1{
-    color: lavender;
-    font-family: "Arial Rounded MT Bold", "Times New Roman", sarif;
+form h2{
+    color: rebeccapurple;
+    /*font-family: "Arial Rounded MT Bold", "Times New Roman", sarif;*/
     text-align: center;
     letter-spacing: .1em;
 }
