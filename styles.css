@@ -11,7 +11,7 @@ h1, h2, p, label,input, select, legend, li, a{
 header{
     background-image: radial-gradient( indigo, rebeccapurple);
     display: flex;
-    height: 10vh;
+    height: 15vh;
     flex-direction: column;
     flex-wrap: nowrap;
     align-items:center;
