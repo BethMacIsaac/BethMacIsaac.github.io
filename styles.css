@@ -16,11 +16,12 @@ header{
     flex-wrap: nowrap;
     align-items:center;
     justify-content: space-between;
-    margin-bottom: 1vh;
+    margin-bottom: 5vh;
+    border-radius: 4px;
 }
 
 header h1{
-    font-family: "Arial Rounded MT Bold", "Times New Roman", sarif;
+    font-family: "Trebuchet MS", sans-serif;
     text-align: center;
     color: lavender;
     width: 100%;
@@ -44,12 +45,17 @@ nav ul{
 }
 
 nav li{
+    border-radius: 4px;
     display: flex;
     width:25%;
     height: 5vh;
     justify-content: center;
     margin: 0;
     padding:0;
+}
+
+.currentPage{
+    background-color: indigo;
 }
 
 nav li:hover{
@@ -98,8 +104,10 @@ main{
 form h2{
     color: rebeccapurple;
     /*font-family: "Arial Rounded MT Bold", "Times New Roman", sarif;*/
-    text-align: center;
+    /*text-align: center;*/
     letter-spacing: .1em;
+    padding-left:4%;
+    margin:0;
 }
 
 #leftCol, #rightCol{
