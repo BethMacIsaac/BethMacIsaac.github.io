@@ -4,26 +4,34 @@ body{
     /*justify-content: center;*/
 }
 h1, h2, p, label,input, select, legend, li, a{
-    font-family: sans-serif;
+    font-family: 'Catamaran', sans-serif;
     color: #58696a;
+}
+
+section{
+    display: flex;
+}
+section h2{
+    font-family: 'Shadows Into Light', cursive;
 }
 
 header{
     background-color: rgb(7,63,80);
     display: flex;
-    height: 15vh;
+    height: 20vh;
     flex-direction: column;
     flex-wrap: nowrap;
     align-items:center;
     justify-content: space-between;
-    border-radius: 4px;
+    /*border-radius: 4px;*/
 }
 
 header h1{
     font-family: 'Shadows Into Light', cursive;
+    font-size: xx-large;
     color: rgb(255,221,245);
     text-align: center;
-   letter-spacing: .5em;
+   letter-spacing: .3em;
     /*color: rebeccapurple;*/
     width: 100%;
     padding: 0;
@@ -35,13 +43,14 @@ nav {
     display: flex;
     align-self: flex-end;
     width: 100%;
-    padding-bottom: 2vh;
+   padding:0;
 
 }
 nav ul{
     background-color: rgb(7,63,80);
     width: 100%;
     display: flex;
+    justify-content: space-around;
     list-style-type: none;
     align-items: center;
     margin: 0;
@@ -49,7 +58,7 @@ nav ul{
 }
 
 nav li{
-    border-radius: 4px;
+    /*border-radius: 4px;*/
     display: flex;
     width:25%;
     height: 5vh;
@@ -66,13 +75,23 @@ li a {
     color: lavender;
 
 }
+li:hover a {
+    align-self: center;
+    display: block;
+    text-decoration: none;
+    font-size: x-large;
+    color: lavender;
+    transition: 0.8s;
 
-.currentPage{
-    background-color: indigo;
 }
 
+/*.currentPage{*/
+    /*background-color: rgb(48,113,133);*/
+/*}*/
+
 nav li:hover{
-    background-color: indigo;
+    /*background-color: indigo;*/
+    font-size: x-large;
     cursor: pointer;
     opacity: 0.6;
     transition: 0.8s;
@@ -90,24 +109,85 @@ section#greeting div {
 
 }
 #greeting:hover{
-    background-color: darkslateblue;
+    background-color: rgb(84,0,116);
+}
+#greeting h2 {
+    color:rgb(84,0,116);
 }
 #greeting:hover p{
    color: bisque;
     transition: 0.7s;
 }
 #greeting:hover h2{
-    color: darksalmon;
+    color: rgb(255,221,245);
+    font-size: 48px;
     transition: 0.7s;
 }
 section:hover{
     transition: 0.7s;
 }
-
-#greeting:hover{
-    background-color: darkslateblue;
-}
 /* ++++++++++++++++++++++++++++++End of greeting section+++++++++++++++++++++++++++++++++++++++++++++++*/
+
+#work ul{
+    list-style-type: none;
+}
+#work li{
+    margin-bottom: 1em;
+}
+#work{
+    display:flex;
+    height: 100vh;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+#work:hover{
+    background-color: rgb(48,113,133);
+}
+
+#work h2{
+    color:rgb(48,113,133);
+}
+#work:hover h2{
+    color: rgb(199,238,250);
+    font-size: 48px;
+    transition: 0.7s;
+}
+
+#work:hover li{
+    color: rgb(199,238,250);
+    transition: 0.7s;
+}
+
+#work > #workImages{
+     display:flex;
+     height: 75%;
+    max-width: 60%;
+     align-items:center;
+     justify-content: center;
+     flex-direction: column;
+ }
+
+#work > #workDescription{
+    display:flex;
+    height: 75%;
+    max-width: 30%;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#work img{
+    max-height: 50%;
+
+}
+
+#work button{
+    margin-top: 2%;
+    position: relative;
+    height: 5%;
+}
+
+/* ++++++++++++++++++++++++++++++End of work section+++++++++++++++++++++++++++++++++++++++++++++++*/
 
 /*main{*/
    /**/
@@ -144,9 +224,9 @@ section > form{
     justify-content: center;
 }
 
-#contact:hover{
-    background-color: orchid;
-}
+/*#contact:hover{*/
+    /*background-color: orchid;*/
+/*}*/
 
 
 form h2{
@@ -265,27 +345,41 @@ button:hover{
 }
 
 #contact:hover{
-    background-color: orchid;
+    background-color:rgb(228,88,185);
+}
+
+#contact:hover input, #contact:hover textarea, #contact:hover select {
+    background-color: rgb(225,240,244);
+}
+
+#contact:hover label, #contact:hover p {
+    color: rgb(255,221,245);
+}
+
+#contact:hover #radioP, #contact:hover legend {
+    color: rgb(7,63,80);
+}
+
+#contact:hover fieldset {
+    color: rgb(225,240,244);
+}
+
+#contact:hover h2{
+    color: rgb(255,221,245);
+    font-size: 48px;
+    transition: 0.7s;
 }
 
 
-
- section p{
+section p{
      color: black;
  }
 
-
-#work{
-    height: 100vh;
-    align-items:center;
-    justify-content: center;
-}
-#work:hover{
-    background-color: lightcoral;
-}
+/* ++++++++++++++++++++++++++++++End of contact section+++++++++++++++++++++++++++++++++++++++++++++++*/
 
 footer{
-    background-color: rebeccapurple;
+    font-family: 'Shadows Into Light', cursive;
+    background-color: rgb(7,63,80);
     display: flex;
     justify-content: center;
     height: 5vh;

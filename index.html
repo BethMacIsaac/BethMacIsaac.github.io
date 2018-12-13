@@ -3,7 +3,9 @@
         <title>Beth's Page</title>
         <!--<link href="formstyles.css" rel="stylesheet">-->
         <link href="styles.css" rel="stylesheet">
+        <script src="code.js" async></script>
         <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
     </head>
     <body>
 
@@ -12,7 +14,6 @@
             <nav>
                 <ul>
                     <li class="currentPage"><a href="#">Home</a></li>
-                    <li><a href="#greeting">Resume</a></li>
                     <li><a href="#work">My Work</a></li>
                     <li ><a href="#contact">Contact Me</a></li>
                 </ul>
@@ -32,7 +33,20 @@
         </section>
 
         <section id="work">
-            <p>some placeholder text</p>
+            <div id="workImages">
+                <h2>Work Samples</h2>
+                <img id="workPreview" src="pics/cardgame.PNG">
+
+            </div>
+            <div id="workDescription">
+                <ul>
+                    <li><strong>Description</strong>: A simple higher or lower card game I programmed using the "Deck of Cards" api</li>
+                    <li><strong>Tools used</strong>: HTML, CSS, Vanilla JavaScript, Materialize CSS library</li>
+                </ul>
+                <button id="workSampleBtn">See More</button>
+
+            </div>
+
         </section>
 
         <section id="contact">
@@ -79,7 +93,7 @@
 
                     <div id="textField">
                         <label for="messageText">Message*:</label>
-                        <textarea name="messageText" id="messageText"  rows="15"></textarea>
+                        <textarea name="messageText" id="messageText"  rows="8"></textarea>
 
                         <button type="submit" name="submitButton" id="submitButton">Send</button>
                     </div>
