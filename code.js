@@ -15,7 +15,7 @@ function start(){
 }
 
 function changePic(count){
-    let imgArray = ['pics/cardgame.png', 'pics/heatmap.png', 'pics/dresdengame-titlepage.PNG' ];
+    let imgArray = ['pics/cardgame.PNG', 'pics/heatmap.PNG', 'pics/dresdengame-titlepage.PNG' ];
     let descArray = ['<strong>Description:</strong> A simple higher or lower card game I programmed using the "Deck of Cards" api',
         '<strong>Description:</strong> An app that pulls current product recalls in Canada and displays them on a heat map',
         '<strong>Description:</strong> A fighting game I wrote in Java based on the book series "The Dresden Files" by Jim Butcher'];
@@ -29,16 +29,10 @@ function changePic(count){
     let toolsUsedLi = document.querySelector('#toolsLi');
 
     console.log(toolsUsedLi);
-    // let picCount = 0;
-
-    // count++;
-    // console.log(imgArray[count]);
-
 
     workImg.setAttribute('src', imgArray[count]);
     descriptionLi.innerHTML = descArray[count];
     toolsUsedLi.innerHTML =  toolsArray[count];
-
 
 }
 
