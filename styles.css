@@ -189,16 +189,9 @@ section:hover{
 
 /* ++++++++++++++++++++++++++++++End of work section+++++++++++++++++++++++++++++++++++++++++++++++*/
 
-/*main{*/
-   /**/
-/*}*/
 
 .formHeader {
     width: 100%;
-    /*border: 2px solid rebeccapurple;*/
-    /*background-color: rebeccapurple;*/
-    /*border-radius: 4px;*/
-    /*margin-bottom: 2em;*/
 }
 
 #contact{
@@ -216,23 +209,17 @@ section:hover{
     justify-content: space-around;
     align-items: flex-start;
     justify-self: center;
-    /*background-color: orchid;*/
 }
+
 section > form{
     display:flex;
     height: 70vh;
     justify-content: center;
 }
 
-/*#contact:hover{*/
-    /*background-color: orchid;*/
-/*}*/
-
 
 form h2{
     color: rebeccapurple;
-    /*font-family: "Arial Rounded MT Bold", "Times New Roman", sarif;*/
-    /*text-align: center;*/
     letter-spacing: .1em;
     padding-left:4%;
     margin:0;
