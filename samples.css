@@ -1,0 +1,46 @@
+#writeUp{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+#writeUp h2{
+    font-size: 40px;
+}
+
+#writeUp:hover{
+   background-color: rgb(199,238,250);
+}
+
+button>a{
+    text-decoration: none;
+    color: rgb(255,221,245);
+}
+#writeUp:hover h2{
+    color: rgb(7,63,80);
+    font-size: 48px;
+    transition: 0.8s;
+}
+
+#writeUp:hover p{
+    color: rgb(7,63,80);
+}
+
+#titleDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#writeUp > div {
+    width: 60%;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+
+}
+
+#writeUp >div button{
+   align-self: center;
+    margin-bottom: 2em;
+}

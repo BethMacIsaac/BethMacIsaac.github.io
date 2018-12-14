@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Card Game</title>
+    <!--i am using my own css but also materialize and a some resources from fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="styles.css" rel="stylesheet"/>
+    <script src="BethLib.js" async></script>
+    <script src="gamecode.js" async></script>
+</head>
+    <body>
+        <header>
+            <h1>COTTAGE CARD COMPENDIUM</h1>
+        </header>
+        <!--<nav></nav>-->
+
+        <section>
+            <!--future functionality-->
+            <!--<select>-->
+                <!--<option value="1">A</option>-->
+                <!--<option value="2">2</option>-->
+                <!--<option value="3">3</option>-->
+                <!--<option value="4">4</option>-->
+                <!--<option value="5">5</option>-->
+                <!--<option value="6">6</option>-->
+                <!--<option value="7">7</option>-->
+                <!--<option value="8">8</option>-->
+                <!--<option value="9">9</option>-->
+                <!--<option value="10">10</option>-->
+                <!--<option value="11">J</option>-->
+                <!--<option value="12">Q</option>-->
+                <!--<option value="13">K</option>-->
+            <!--</select>-->
+
+            <div id="getPlayerName">
+                <!--<label for="playerName">Please enter your name: </label>-->
+                <input id="playerName" type="text" data-length="10" placeholder="Please enter your name">
+                <button id="saveName"><i class="fa">&#xf0c7;</i></button>
+            </div>
+
+            <div id="welcome"></div>
+
+
+
+            <button id="startBtn">Start</button>
+
+            <button id="higherBtn">Higher</button>
+            <button id="lowerBtn">Lower</button>
+
+            <label for="scoreBox">Score: </label>
+            <output type="number" id="scoreBox" value="0"></output>
+
+            <label for="streakBox">Current Streak: </label>
+            <output type="number" id="streakBox" value="0"></output>
+
+            <label for="longestStreakBox">Longest Streak: </label>
+            <output type="number" id="longestStreakBox" value="0"></output>
+
+            <label for="remainingCards">Remaining Cards: </label>
+            <output type="number" id="remainingCards" value="0"></output>
+
+
+
+            <label id="aceLabel" for="aceSelect">Aces: </label>
+
+            <select id="aceSelect">
+
+                <option value="1">Low</option>
+                <option value="14">High</option>
+
+            </select>
+
+            <div id="gameOver">
+
+                <p>Do you want to play again?</p>
+                <button id="shuffle">Yes</button>
+
+            </div>
+
+            <div id="newGame">
+                <p>Welcome back! You may continue from where you left off or start a new game</p>
+                <button id="btnNewGame">New Game</button>
+                <button id="btnDismiss">Dismiss</button>
+            </div>
+
+            <button id="btnSave">Save & Quit</button>
+
+        </section>
+
+        <main>
+            <article>
+                <p>Welcome to my site! Growing up I always spent my summers at my family's cottage at the beach. The cottage had one rule: no TV (with a "no
+                    internet" clause later on). On sunny days, this was no problem... on rainy days I played a lot of cards.</p>
+                <p>Naturally, when the time came to write a web app one of my first thoughts was to write a card game. I intend to expand this page with more games later,
+                    but for now there is one game and the name of that game is "Higher or Lower" it is simple but weirdly addictive, when you press start a card will be drawn.
+                    Your mission, should you choose to accept it, is simply to guess if the next card will be higher or lower. Aces are always a point of contention in my experience,
+                    so they can either bet set to "high" or "low" depending of your house rules.</p>
+                <p>Have fun!</p>
+            </article>
+
+            <aside id="cardPic">
+            </aside>
+
+        </main>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    </body>
+</html>
