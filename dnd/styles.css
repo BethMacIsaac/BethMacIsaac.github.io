@@ -1,0 +1,110 @@
+body, main, header{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body{
+    background-color: #c0fd4591;
+}
+header{
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: #104410;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-family: 'Eagle Lake', cursive;
+    color: goldenrod;
+    display: inline;
+    max-width: 70%;
+    letter-spacing: .1em;
+}
+
+h3{
+    font-family: 'Eagle Lake', cursive;
+    color: #104410;
+    display: inline;
+}
+
+main{
+    width: 100%;
+}
+
+aside{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkslategray;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+#menuLayout{
+    display: flex;
+    width: 75%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+label{
+    font-family: 'Aleo', serif;
+    color: azure;
+}
+
+#diceDisplay{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#diceDisplay > div{
+    max-width: 85vw;
+    margin-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.die{
+    background-color: aliceblue;
+    display: inline;
+    font-family: 'Aleo', serif;
+    border: 2px solid #104410;
+    color: #104410;
+    font-weight: bold;
+    margin: 1%;
+    padding: 1em 1.5em;
+}
+
+#reportTotal{
+    margin-top: .5em;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkslategray;
+    padding-top: .25em;
+    padding-bottom: .25em;
+}
+
+#reportTotal p{
+    font-family: 'Aleo', serif;
+    font-size: medium;
+    color: azure;
+}
+
+#total{
+    color: goldenrod;
+}
+
+
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ye Olde Dice Roller App</title>
+        <link href="https://fonts.googleapis.com/css?family=Aleo|Eagle+Lake" rel="stylesheet">
+        <script src="dicecode.js" async></script>
+        <link href="styles.css" rel="stylesheet" />
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Ye Olde D&D Dice Roller App</h1>
+        </header>
+
+
+
+        <main>
+            <aside id="diceMenu">
+                <div id="menuLayout">
+                    <label>
+                        Type of Die to Roll:&nbsp;
+                        <select id="chooseDie">
+                            <option value="4">D4</option>
+                            <option value="6">D6</option>
+                            <option value="8">D8</option>
+                            <option value="10">D10</option>
+                            <option value="12">D12</option>
+                            <option value="20">D20</option>
+                            <option value="100">Percentile</option>
+                        </select>
+                    </label>
+
+                    <div><!--This div is to stick the button to the number of dice field-->
+                        <label>
+                            Number of Dice:&nbsp;
+                            <input type="number" id="numberOfDice" value="1" max="50" min="1">
+                            &nbsp;
+                        </label>
+                        <button id="roll">Roll 'Em</button>
+                    </div><!--end of div to stick the button to the number of dice field-->
+                </div><!--end of menuLayout div-->
+            </aside>
+
+            <section id="diceDisplay">
+
+                <div>
+                    <h3>No Dice Rolled Yet</h3>
+                </div>
+            </section>
+
+            <footer id="reportTotal">
+                <p>Total of Dice: <output id="total">0</output></p>
+            </footer>
+
+        </main>
+
+    </body>
+</html>
