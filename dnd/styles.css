@@ -10,7 +10,7 @@ body{
     background-color: #c0fd4591;
 }
 header{
-    width: 100vw;
+    width: 100%;
     padding-top: 1em;
     padding-bottom: 1em;
     background-color: #104410;
@@ -22,7 +22,7 @@ h1{
     font-family: 'Eagle Lake', cursive;
     color: goldenrod;
     display: inline;
-    max-width: 70vw;
+    max-width: 70%;
     letter-spacing: .1em;
 }
 
@@ -33,11 +33,11 @@ h3{
 }
 
 main{
-    width: 100vw;
+    width: 100%;
 }
 
 aside{
-    width: 100vw;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -52,7 +52,7 @@ aside{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 75vw;
+    width: 75%;
     justify-content: space-around;
     align-items: center;
 }
@@ -67,7 +67,7 @@ label{
     display: -ms-flexbox;
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    width: 100%;
     justify-content: center;
     align-items: center;
 }
@@ -92,15 +92,13 @@ label{
     border: 2px solid #104410;
     color: #104410;
     font-weight: bold;
-    margin: 1vw;
+    margin: 1%;
     padding: 1em 1.5em;
 }
 
 #reportTotal{
     margin-top: .5em;
-    width:100vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    width:100%;
     display: flex;
     justify-content: center;
     align-items: center;
