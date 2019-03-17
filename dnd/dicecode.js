@@ -10,6 +10,7 @@ function rollout() {
     let diceNumber;
 
     dieSelect.addEventListener("change", getMax);
+    diceInput.addEventListener("focus", resetValue);
     rollBtn.addEventListener("click", rollDice);
 
     function getMax(){
@@ -17,6 +18,10 @@ function rollout() {
         // console.log(diceMax);
     }
 
+    function resetValue() {
+        diceInput.value = "";
+
+    }
     function rollDice(){
         let diceSection = document.querySelector("#diceDisplay > div");
         totalRolled = 0;
