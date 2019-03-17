@@ -1,6 +1,9 @@
 body, main, header{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     flex-wrap: wrap;
+
 }
 
 body{
@@ -35,6 +38,8 @@ main{
 
 aside{
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,6 +49,8 @@ aside{
 }
 
 #menuLayout{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 75%;
     justify-content: space-around;
@@ -56,6 +63,8 @@ label{
 }
 
 #diceDisplay{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -66,6 +75,8 @@ label{
 #diceDisplay > div{
     max-width: 85vw;
     margin-top: 1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -88,6 +99,8 @@ label{
 #reportTotal{
     margin-top: .5em;
     width:100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     justify-content: center;
     align-items: center;
