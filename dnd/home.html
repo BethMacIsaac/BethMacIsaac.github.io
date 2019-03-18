@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Ye Olde Dice Roller App</title>
+        <meta name="viewport" content="width-device-width, initial-scale=1" />
         <link href="https://fonts.googleapis.com/css?family=Aleo|Eagle+Lake" rel="stylesheet">
         <script src="dicecode.js" async></script>
         <link href="styles.css" rel="stylesheet" />
@@ -21,7 +22,7 @@
                 <div id="menuLayout">
                     <label>
                         Type of Die to Roll:&nbsp;
-                        <select id="chooseDie">
+                        <select class="chooseDie">
                             <option value="4">D4</option>
                             <option value="6">D6</option>
                             <option value="8">D8</option>
@@ -35,7 +36,7 @@
                     <div><!--This div is to stick the button to the number of dice field-->
                         <label>
                             Number of Dice:&nbsp;
-                            <input type="number" id="numberOfDice" value="1" max="50" min="1">
+                            <input type="number" class="numberOfDice" value="1" max="50" min="1">
                             &nbsp;
                         </label>
                         <button id="roll">Roll 'Em</button>

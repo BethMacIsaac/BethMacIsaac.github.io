@@ -1,8 +1,8 @@
 window.addEventListener("load", rollout);
 
 function rollout() {
-    let dieSelect = document.querySelector("#chooseDie");
-    let diceInput = document.querySelector("#numberOfDice");
+    let dieSelect = document.querySelector(".chooseDie");
+    let diceInput = document.querySelector(".numberOfDice");
     let rollBtn = document.querySelector("#roll");
     let diceMax = parseInt(dieSelect.value);
     let diceArray = [];
