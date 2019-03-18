@@ -67,8 +67,6 @@ label{
     border: 1px solid #104410;
     background-color: aliceblue;
     color: #104410;
-
-
 }
 
 #diceDisplay{
@@ -136,6 +134,12 @@ label{
     label{
         padding-bottom: 1vh;
     }
+
+    #roll{
+        padding: 2vh 10vw 2vh 10vw;
+
+    }
+
 
     h1, main, aside, #menuLayout, #diceDisplay, #diceDisplay > div, #reportTotal{
         width: 100%;
