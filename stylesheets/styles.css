@@ -3,7 +3,7 @@ body{
     flex-direction: column;
     /*justify-content: center;*/
 }
- h2, p, label,input, select, legend, li, a{
+ h2, h3, p, label,input, select, legend, li, a{
     font-family: 'Catamaran', sans-serif;
     color: #58696a;
 }
