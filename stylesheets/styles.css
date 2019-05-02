@@ -98,17 +98,31 @@ nav li:hover{
     display:flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 90vh;
     /*background-color: darkslateblue;*/
 }
-section#greeting div {
+#greeting div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 50%;
 
 }
+
+#greeting div section{
+    display: block;
+}
+
+#greeting div section p{
+    width: 100%
+}
+
 #greeting:hover{
     background-color: rgb(84,0,116);
 }
 #greeting h2 {
+    padding-bottom: 0;
     color:rgb(84,0,116);
 }
 #greeting:hover p{
