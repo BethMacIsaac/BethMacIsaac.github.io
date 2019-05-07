@@ -31,6 +31,7 @@ function changePic(count){
     console.log(toolsUsedLi);
 
     workImg.setAttribute('src', imgArray[count]);
+    workImg.style.transition = "0.7s";
     descriptionLi.innerHTML = descArray[count];
     toolsUsedLi.innerHTML =  toolsArray[count];
 

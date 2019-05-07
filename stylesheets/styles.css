@@ -1,6 +1,8 @@
-body{
-    display: flex;
+body main{
+    /*display: flex;*/
+    width:100%;
     flex-direction: column;
+    flex-wrap: nowrap;
     /*justify-content: center;*/
 }
  h2, h3, p, label,input, select, legend, li, a{
@@ -8,15 +10,10 @@ body{
     color: #58696a;
 }
 
-section{
-    display: flex;
-}
-section h2{
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 40px;
-}
+
 
 header{
+    width:100%;
     background-color: rgb(7,63,80);
     display: flex;
     height: 20vh;
@@ -33,7 +30,6 @@ header > h1{
     color: rgb(255,221,245);
     text-align: center;
    letter-spacing: .3em;
-    /*color: rebeccapurple;*/
     width: 100%;
     padding: 0;
 }
@@ -62,7 +58,7 @@ nav li{
     /*border-radius: 4px;*/
     display: flex;
     width:25%;
-    height: 5vh;
+    /*height: 5vh;*/
     justify-content: center;
     margin: 0;
     padding:0;
@@ -94,13 +90,27 @@ nav li:hover{
     transition: 0.8s;
 }
 
+section{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+section h2{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 40px;
+}
+
 #greeting{
-    display:flex;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    /*height: 90vh;*/
     /*background-color: darkslateblue;*/
 }
+
+
 #greeting div {
     display: flex;
     flex-direction: column;
@@ -111,7 +121,8 @@ nav li:hover{
 }
 
 #greeting div section{
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
 #greeting div section p{
@@ -122,6 +133,7 @@ nav li:hover{
     background-color: rgb(84,0,116);
 }
 #greeting h2 {
+    display:block;
     padding-bottom: 0;
     color:rgb(84,0,116);
 }
@@ -147,7 +159,8 @@ section:hover{
 }
 #work{
     display:flex;
-    height: 100vh;
+    flex-direction: column;
+    /*height: 100vh;*/
     align-items: flex-start;
     justify-content: space-around;
 }
@@ -171,8 +184,6 @@ section:hover{
 
 #work > #workImages{
      display:flex;
-     height: 75%;
-    max-width: 60%;
      align-items:center;
      justify-content: center;
      flex-direction: column;
@@ -180,15 +191,15 @@ section:hover{
 
 #work > #workDescription{
     display:flex;
-    height: 75%;
-    max-width: 30%;
+    /*height: 75%;*/
+    width: 75%;
     align-items:center;
     justify-content: center;
     flex-direction: column;
 }
 
 #work img{
-    max-height: 70%;
+  max-width: 60%;
 
 }
 
@@ -201,14 +212,14 @@ section:hover{
 
 #contact{
     display:flex;
-    height: 90vh;
+    /*height: 90vh;*/
     justify-content:center;
     align-items: center; /*move form here*/
     /*background-color: orchid;*/
 }
 #contact main{
     width:75%;
-    height: 75vh;
+    /*height: 75vh;*/
     display:flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -218,7 +229,7 @@ section:hover{
 
 section > form{
     display:flex;
-    height: 70vh;
+    /*height: 70vh;*/
     justify-content: center;
 }
 
@@ -333,6 +344,7 @@ button{
     border-radius: 4px;
     border: none;
 }
+
 button>a{
     text-decoration: none;
     color: rgb(255,221,245);
@@ -343,7 +355,7 @@ button:hover{
 }
 
 #contact:hover{
-    background-color:rgb(228,88,185);
+    background-color:#da70d633;
 }
 
 #contact:hover input, #contact:hover textarea, #contact:hover select {
@@ -351,11 +363,11 @@ button:hover{
 }
 
 #contact:hover label, #contact:hover p {
-    color: rgb(255,221,245);
+    color: rebeccapurple;
 }
 
 #contact:hover #radioP, #contact:hover legend {
-    color: rgb(7,63,80);
+    color: rebeccapurple;
 }
 
 #contact:hover fieldset {
@@ -363,7 +375,7 @@ button:hover{
 }
 
 #contact:hover h2{
-    color: rgb(255,221,245);
+    color: #58696a;
     font-size: 48px;
     transition: 0.7s;
 }
@@ -377,7 +389,7 @@ section p{
 
 footer{
     font-family: 'Shadows Into Light', cursive;
-    background-color: rgb(7,63,80);
+    background-color: dimgray;
     display: flex;
     justify-content: center;
     height: 5vh;
@@ -385,7 +397,9 @@ footer{
 }
 
 footer p{
-    color: lavender;
+    font-family: 'Shadows Into Light', cursive;
+    color: aliceblue;
+    letter-spacing: 1px;
     align-self: center;
 }
 

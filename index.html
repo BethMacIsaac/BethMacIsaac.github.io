@@ -3,113 +3,118 @@
         <title>Beth's Page</title>
         <!--<link href="formstyles.css" rel="stylesheet">-->
         <link href="stylesheets/styles.css" rel="stylesheet">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
         <script src="code.js" async></script>
         <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
     </head>
     <body>
+        <main>
 
-        <header>
-            <h1>Beth MacIsaac</h1>
-            <nav>
-                <ul>
-                    <li class="currentPage"><a href="#">Home</a></li>
-                    <li><a href="#work">My Work</a></li>
-                    <li ><a href="#contact">Contact Me</a></li>
-                </ul>
-            </nav>
-        </header>
+            <header>
+                <h1>Beth MacIsaac</h1>
+                <nav>
+                    <ul>
+                        <li class="currentPage"><a href="#">Home</a></li>
+                        <li><a href="#work">My Work</a></li>
+                        <li ><a href="#contact">Contact Me</a></li>
+                    </ul>
+                </nav>
+            </header>
 
-        <section id="greeting">
-            <div>
-                <h2>Hello World!</h2>
-                <img src="./pics/portfoliopic-cropped.png">
+            <section id="greeting">
+                <div>
+                    <h2>Hello World!</h2>
+                    <img src="./pics/portfoliopic-cropped.png">
 
-                <section>
-                    <p>My name is Beth MacIsaac and I am web developer based in Halifax, Nova Scotia</p>
-                    <p>I am a recent graduate of the newly overhauled web programming diploma at NSCC. I have lots of experience with the latest
-                    front end development tools and backend services.</p>
-                    <p>I am friendly, easy going and eager to learn, and love to work with my peers to solve complicated problems.</p>
-                    <p>My main experience is JavaScript and CSS but I have used Java, C# and php in my development of complex full-stack web-applications.
-                    I have a passion for coding and feel I would be an excellent asset to any team.</p>
-                </section>
-            </div>
-        </section>
+                    <section>
+                        <p>My name is Beth MacIsaac and I am web developer based in Halifax, Nova Scotia</p>
+                        <p>I am a recent graduate of the newly overhauled web programming diploma at NSCC. I have lots of experience with the latest
+                            front end development tools and backend services.</p>
+                        <p>I am friendly, easy going and eager to learn, and love to work with my peers to solve complicated problems.</p>
+                        <p>My main experience is JavaScript and CSS but I have used Java, C# and php in my development of complex full-stack web-applications.
+                            I have a passion for coding and feel I would be an excellent asset to any team.</p>
+                    </section>
 
-        <section id="work">
-            <div id="workImages">
-                <h2>Work Samples</h2>
-                <img id="workPreview" src="pics/cardgame.PNG">
+                </div>
 
-            </div>
-            <div id="workDescription">
-                <ul>
-                    <li id="descLi"><strong>Description</strong>: A simple higher or lower card game I programmed using the "Deck of Cards" api</li>
-                    <li id="toolsLi"><strong>Tools used</strong>: HTML, CSS, Vanilla JavaScript, Materialize CSS library</li>
-                </ul>
-                <button id="workSampleBtn"><a href="worksample1.html">See More</a></button>
+            </section>
 
-            </div>
+            <section id="work">
+                <div id="workImages">
+                    <h2>Work Samples</h2>
+                    <img id="workPreview" src="pics/cardgame.PNG">
 
-        </section>
+                </div>
+                <div id="workDescription">
+                    <ul>
+                        <li id="descLi"><strong>Description</strong>: A simple higher or lower card game I programmed using the "Deck of Cards" api</li>
+                        <li id="toolsLi"><strong>Tools used</strong>: HTML, CSS, Vanilla JavaScript, Materialize CSS library</li>
+                    </ul>
+                    <button id="workSampleBtn"><a href="worksample1.html">See More</a></button>
 
-        <section id="contact">
-            <!--<a href="contact.html">Contact Me</a>-->
-            <form>
-                <main>
-                    <div class="formHeader">
-                        <h2>Contact Me</h2>
-                    </div>
+                </div>
 
-                    <div id="leftCol">
-                        <label for="contactName">Name*:
-                            <input type="text" name="contactName" id="contactName">
-                        </label>
+            </section>
 
-                        <label for="email">Email*:
-                            <input type="text" name="email" id="email">
-                        </label>
+            <section id="contact">
+                <!--<a href="contact.html">Contact Me</a>-->
+                <form>
+                    <main>
+                        <div class="formHeader">
+                            <h2>Contact Me</h2>
+                        </div>
 
-                        <label for="phone">Phone:
-                            <input type="text" name="phone" id="phone" placeholder="(555) 555-5555">
-                        </label>
+                        <div id="leftCol">
+                            <label for="contactName">Name*:
+                                <input type="text" name="contactName" id="contactName">
+                            </label>
+
+                            <label for="email">Email*:
+                                <input type="text" name="email" id="email">
+                            </label>
+
+                            <label for="phone">Phone:
+                                <input type="text" name="phone" id="phone" placeholder="(555) 555-5555">
+                            </label>
 
 
-                        <label id="reasonLabel" for="reasonSelect">What can I do for you?: </label>
+                            <label id="reasonLabel" for="reasonSelect">What can I do for you?: </label>
 
-                        <select name="reasonSelect" id="reasonSelect">
-                            <option>General Question/Comment</option>
-                            <option>Work Inquiry</option>
-                            <option>Something Else</option>
-                        </select>
-                    </div>
+                            <select name="reasonSelect" id="reasonSelect">
+                                <option>General Question/Comment</option>
+                                <option>Work Inquiry</option>
+                                <option>Something Else</option>
+                            </select>
+                        </div>
 
-                    <div id="rightCol">
-                        <fieldset>
-                            <legend>Preferred Contact Method</legend>
-                            <p id="radioP">How would you like me to get back to you?</p>
-                            <p class="radio"><input type="radio" name="contactMethod" value="email" checked>by Email</p>
-                            <p class="radio"><input type="radio" name="contactMethod" value="call">by Phone</p>
-                            <p class="radio"><input type="radio" name="contactMethod" value="text">by Text</p>
-                            <p class="radio"><input type="radio" name="contactMethod" value="other">Other (Specify in Message)</p>
-                        </fieldset>
-                    </div>
+                        <div id="rightCol">
+                            <fieldset>
+                                <legend>Preferred Contact Method</legend>
+                                <p id="radioP">How would you like me to get back to you?</p>
+                                <p class="radio"><input type="radio" name="contactMethod" value="email" checked>by Email</p>
+                                <p class="radio"><input type="radio" name="contactMethod" value="call">by Phone</p>
+                                <p class="radio"><input type="radio" name="contactMethod" value="text">by Text</p>
+                                <p class="radio"><input type="radio" name="contactMethod" value="other">Other (Specify in Message)</p>
+                            </fieldset>
+                        </div>
 
-                    <div id="textField">
-                        <label for="messageText">Message*:</label>
-                        <textarea name="messageText" id="messageText"  rows="8"></textarea>
+                        <div id="textField">
+                            <label for="messageText">Message*:</label>
+                            <textarea name="messageText" id="messageText"  rows="8"></textarea>
 
-                        <button type="submit" name="submitButton" id="submitButton">Send</button>
-                    </div>
+                            <button type="submit" name="submitButton" id="submitButton">Send</button>
+                        </div>
 
-                </main>
-            </form>
-        </section>
+                    </main>
+                </form>
+            </section>
 
-        <footer>
-            <p>&copy; Beth MacIsaac 2019</p>
-        </footer>
+            <footer>
+                <p>&copy; Beth MacIsaac 2019</p>
+            </footer>
 
+        </main>
 
     </body>
 </html>
