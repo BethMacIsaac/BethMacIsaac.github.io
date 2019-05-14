@@ -161,8 +161,8 @@ section:hover{
     display:flex;
     flex-direction: column;
     /*height: 100vh;*/
-    align-items: flex-start;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
 }
 #work:hover{
     background-color: rgb(48,113,133);
@@ -191,7 +191,6 @@ section:hover{
 
 #work > #workDescription{
     display:flex;
-    /*height: 75%;*/
     width: 75%;
     align-items:center;
     justify-content: center;
@@ -199,8 +198,13 @@ section:hover{
 }
 
 #work img{
-  max-width: 60%;
+  width: 65%;
 
+}
+
+#work button{
+    align-self: center;
+    margin-bottom: 1rem;
 }
 
 /* ++++++++++++++++++++++++++++++End of work section+++++++++++++++++++++++++++++++++++++++++++++++*/

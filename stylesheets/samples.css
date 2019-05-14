@@ -1,5 +1,8 @@
+
+
 #writeUp{
     display: flex;
+    flex-direction: column;
     align-items:center;
     justify-content: center;
 }
@@ -10,6 +13,17 @@
 
 #writeUp:hover{
    background-color: rgb(199,238,250);
+}
+
+
+#writeUpCol1{
+    display: flex;
+    justify-content: center;
+    alignment: center;
+}
+
+#gifExample{
+    width: 75%;
 }
 
 button>a{
@@ -44,6 +58,7 @@ button>a{
    align-self: center;
     margin-bottom: 2em;
 }
+
 
 h3{
     align-self: center;
