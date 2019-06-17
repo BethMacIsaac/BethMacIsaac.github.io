@@ -18,8 +18,7 @@
 
 #writeUpCol1{
     display: flex;
-    justify-content: center;
-    alignment: center;
+    align-items: flex-start;
 }
 
 #gifExample{
