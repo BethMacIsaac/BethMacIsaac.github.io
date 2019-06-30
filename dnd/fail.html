@@ -1,46 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Fumbletron 2000</title>
-    <meta name="viewport" content="width-device-width, initial-scale=1" />
-    <link href="https://fonts.googleapis.com/css?family=Aleo|Eagle+Lake" rel="stylesheet">
-    <script src="fumblecode.js" async></script>
-    <link href="styles.css" rel="stylesheet" />
-    <link href="fumbleStyle.css" rel="stylesheet" />
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Fumbletron 2000</title>
+        <meta name="viewport" content="width-device-width, initial-scale=1" />
+        <link href="https://fonts.googleapis.com/css?family=Aleo|Eagle+Lake" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/a71fa1d6c9.js"></script>
+        <script src="fumblecode.js" async></script>
+        <link href="styles.css" rel="stylesheet" />
+        <link href="fumbleStyle.css" rel="stylesheet" />
+    </head>
+    <body>
 
-<header>
-    <img alt="So you rolled a one" src="./../pics/cap-n1.jpg">
-</header>
+        <header>
+            <img alt="So you rolled a one" src="./../pics/cap-n1.jpg">
+        </header>
 
 
+        <main>
+            <aside id="fateMenu">
+                <div id="fateBanner">
+                    <button id="getResult">Discover Your Fate</button>
+                    <p><a id="listLink" href="#">See All Effects</a></p>
+                </div>
+            </aside>
 
-<main>
-    <aside id="fateMenu">
-        <div id="fateBanner">
-            <h2>
-                Don't worry, it happens to the best of us
-            </h2>
+            <section id="fumbleDisplay">
+                <h2 id="title"></h2>
+                <span><i class="fas fa-skull-crossbones"></i></span>
+                <p id="effect"></p>
+            </section>
 
-            <button id="getResult">DISCOVER YOUR FATE</button>
-        </div>
+            <section id="allDisplay">
+            </section>
 
-    </aside>
+            <footer>
+                <label>Number rolled: <output></output></label>
+            </footer>
 
-    <section id="diceDisplay">
+        </main>
 
-        <div>
-            <h3>No Dice Rolled Yet</h3>
-        </div>
-    </section>
-
-    <footer id="reportTotal">
-        &nbsp;
-    </footer>
-
-</main>
-
-</body>
+    </body>
 </html>

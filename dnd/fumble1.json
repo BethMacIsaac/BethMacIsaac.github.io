@@ -5,7 +5,7 @@
     {
       "lowest":1,
       "highest":5,
-      "expletive": "Shit! you slipped.",
+      "expletive": "Ass over teakettle",
       "result": "Make a successful DC 10 DEX Save or immediately fall prone"
     },
     {
@@ -28,7 +28,7 @@
     {
       "lowest":16,
       "highest":19,
-      "expletive": "OOF You got the wind knocked out of your dumb ass",
+      "expletive": "OOF! You got the wind knocked out of you",
       "result": "You become exhausted to level 1 of that condition"
     },
     {
@@ -57,7 +57,7 @@
       "lowest":31,
       "highest":35,
       "expletive": "Butterfingers",
-      "result": "You drop your damn weapon and it falls 10’ from your location in a random direction."
+      "result": "You drop your weapon and it falls 10’ from your location in a random direction."
     },
     {
       "lowest":36,
@@ -118,7 +118,7 @@
     },
     {
       "lowest":70,
-      "expletive": "Friendly fucking fire",
+      "expletive": "Friendly fire",
       "result": "Mistakenly strike an ally adjacent to you with your attack."
     },
     {
@@ -131,7 +131,7 @@
       "lowest":76,
       "highest":79,
       "expletive": "Spectacular fuck up",
-      "result": "A devastating error. Your opponent may immediately make one melee attack <style 'color:darkred'> with advantage</style> against you as a reaction."
+      "result": "A devastating error. Your opponent may immediately make one melee attack with advantage against you as a reaction."
     },
     {
       "lowest":80,

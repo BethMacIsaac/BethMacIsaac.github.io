@@ -1,6 +1,135 @@
+body{
+    background-color: #f9f1f1;
+}
+
+header{
+    background-color: #3c0505;
+}
+
+aside, footer{
+    background-color: black;
+    width: 100%;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+aside h2{
+    color: indianred;
+    font-family: 'Eagle Lake', cursive;
+
+}
+
+
+
 #fateBanner{
     display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#fateBanner p{
+    display: flex;
+    font-family: 'Aleo', serif;
+    justify-content: center;
+}
+
+#fateBanner a{
+    color: indianred;
+    text-decoration: none;
+}
+#fateBanner a:visited{
+    color: indianred;
+}
+#fateBanner a:hover{
+    color:#f9f1f1;
+    text-decoration: underline;
+}
+
+
+button{
+    width:50%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    align-self: center;
+    font-size: larger;
+    font-family: 'Eagle Lake', cursive;
+    font-weight: bold;
+    border: 2px darkred;
+    color: #3c0505;
+
+}
+
+button:hover{
+    background-color: indianred;
+    color: black;
+}
+
+#fumbleDisplay {
+    display: flex;
     width: 80%;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#fumbleDisplay h2{
+    font-size: xx-large;
+    width: 35%;
+    font-family: 'Eagle Lake', cursive;
+    font-weight: bold;
+    color: #3c0505;
+    display:inline;
+}
+
+#fumbleDisplay p{
+    font-size: large;
+    width: 35%;
+    display: inline;
+    font-family: 'Aleo', serif;
+    color: #3c0505;
+}
+
+#fumbleDisplay span{
+    width: 5%;
+    margin-left: 1%;
+    margin-right: 1%;
+    font-size: xx-large;
+    color: #0c4877;
+}
+
+#allDisplay{
+    width: 85%;
+}
+
+table{
+    margin-top: 1em;
+}
+table tr:nth-child(odd){
+    background-color: #c2d8ea;
+}
+table, th, td{
+    border: 2px solid #3c0505;
+    border-collapse: collapse;
+    font-family: 'Aleo', serif;
+}
+
+table th{
+    background-color: #0c4877;
+    color: #f9f1f1;
+}
+table td, table th{
+    padding: .25em .5em;
+
 }
