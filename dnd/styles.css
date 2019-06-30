@@ -18,6 +18,7 @@ header{
     align-items: center;
 }
 
+
 h1{
     font-family: 'Eagle Lake', cursive;
     color: goldenrod;
@@ -123,6 +124,7 @@ label{
 #total{
     color: goldenrod;
 }
+
 
 @media only screen and (max-width: 480px){
     #menuLayout{

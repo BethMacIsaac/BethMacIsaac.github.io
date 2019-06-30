@@ -1,0 +1,177 @@
+{
+  "updated_date": "2019-06-30",
+  "updated_by": "Josh Hayne (edited by Beth MacIsaac)",
+  "effect": [
+    {
+      "lowest":1,
+      "highest":5,
+      "expletive": "Shit! you slipped.",
+      "result": "Make a successful DC 10 DEX Save or immediately fall prone"
+    },
+    {
+      "lowest":6,
+      "highest":9,
+      "expletive": "Well crap, You pulled up lame",
+      "result": "Make a successful DC 10 CON save or your speed is halved until the encounter ends"
+    },
+    {
+      "lowest":10,
+      "expletive": "The glasses do nothing!",
+      "result": "You got something in your eye, your melee attacks only do half damage for the remainder of the encounter."
+    },
+    {
+      "lowest":11,
+      "highest":15,
+      "expletive": "Wicked backswing, bruh",
+      "result": "You lightly whack yourself on your backswing and take 1d4 damage"
+    },
+    {
+      "lowest":16,
+      "highest":19,
+      "expletive": "OOF You got the wind knocked out of your dumb ass",
+      "result": "You become exhausted to level 1 of that condition"
+    },
+    {
+      "lowest":20,
+      "expletive": "You lost all your confidence",
+      "result": "Gain disadvantage for your attacks against this opponent for the remainder of the encounter."
+    },
+    {
+      "lowest":21,
+      "highest":25,
+      "expletive": "Shooketh",
+      "result": "You are stunned for 1 round."
+    },
+    {
+      "lowest":26,
+      "highest":29,
+      "expletive": "Check out this bitch",
+      "result": "You fail so spectacularly you give your enemies hope. Your target’s allies within 30 feet gain a d6 inspiration die that can be used during this encounter."
+    },
+    {
+      "lowest":30,
+      "expletive": "Panic! (probably not at the disco)",
+      "result": " Make a successful DC 10 Wisdom Save or become frightened for the remainder of the encounter."
+    },
+    {
+      "lowest":31,
+      "highest":35,
+      "expletive": "Butterfingers",
+      "result": "You drop your damn weapon and it falls 10’ from your location in a random direction."
+    },
+    {
+      "lowest":36,
+      "highest":39,
+      "expletive": "Discombobulated",
+      "result": "You become incapacitated for 1 round."
+    },
+    {
+      "lowest":40,
+      "expletive": "I've fallen and I can't get up",
+      "result": "Immediately fall prone and lose all movement this round."
+    },
+    {
+      "lowest":41,
+      "highest":45,
+      "expletive": "Just awful timing",
+      "result": "Drop to last in the imitative order for the combat and do not act again this turn."
+    },
+    {
+      "lowest":46,
+      "highest":49,
+      "expletive": "Hand bone connected to the - oh shit",
+      "result": "You break a bone in your hand. You suffer disadvantage for the rest of the encounter and take 1d6 damage every round until healed."
+    },
+    {
+      "lowest":50,
+      "expletive": "Shooting fish in a barrel",
+      "result": "You made an easy target of yourself, allies of the target within 20’ will attack you with their next turn, unless they would suffer an Attack of Opportunity to do so"
+    },
+    {
+      "lowest":51,
+      "highest":55,
+      "expletive": "Stop exposing yourself",
+      "result": "Your swing unbalances you so much that your target may take one melee attack against you as a reaction."
+    },
+    {
+      "lowest":56,
+      "highest":59,
+      "expletive": "Your own worst enemy",
+      "result": "You suffer the effects of a bane spell for the remainder of the encounter."
+    },
+    {
+      "lowest":60,
+      "expletive": "Caught with your trousers down",
+      "result": "Unguarded. All adjacent allies of your target may immediately take an attack of opportunity against you."
+    },
+    {
+      "lowest":61,
+      "highest":65,
+      "expletive": "That'll cost you",
+      "result": "Costly mistake. Your target may reroll all 1s and 2s on the damage roll for his next successful melee attack against you."
+    },
+    {
+      "lowest":66,
+      "highest":69,
+      "expletive": "Not fooling anyone",
+      "result": "You revealed your team's intentions. You and your allies all suffer disadvantage for your next attack."
+    },
+    {
+      "lowest":70,
+      "expletive": "Friendly fucking fire",
+      "result": "Mistakenly strike an ally adjacent to you with your attack."
+    },
+    {
+      "lowest":71,
+      "highest":75,
+      "expletive": "Take that, wall!",
+      "result": "Your weapon becomes stuck in the floor or a nearby object. You must make a DC 14 STR check to remove it as an action."
+    },
+    {
+      "lowest":76,
+      "highest":79,
+      "expletive": "Spectacular fuck up",
+      "result": "A devastating error. Your opponent may immediately make one melee attack <style 'color:darkred'> with advantage</style> against you as a reaction."
+    },
+    {
+      "lowest":80,
+      "expletive": "Your weapon shattered!",
+      "result": "Your weapon breaks if it is non-magical. Enchanted weapons must make a DC 8 Save and get a +1 to their roll for every + of the weapon."
+    },
+    {
+      "lowest":81,
+      "highest":85,
+      "expletive": "FORE!",
+      "result": "You lose your grip and throw your weapon. It lands 30’ from your location in a random direction."
+    },
+    {
+      "lowest":86,
+      "highest":89,
+      "expletive": "It hurt itself in its confusion",
+      "result": "You immediately suffer the effects of the Confusion spell for 1 round."
+    },
+    {
+      "lowest":90,
+      "expletive": "Horrible aftermath",
+      "result": "Aw shit. Roll twice on this page and apply both effects to yourself."
+    },
+    {
+      "lowest":91,
+      "highest":95,
+      "expletive": "Back at ya",
+      "result": "Your attack ricochets back and you hit yourself. Roll your damage as if you had hit your target and apply it to yourself."
+    },
+    {
+      "lowest":96,
+      "highest":99,
+      "expletive": "Did you see that!?",
+      "result": "Your attack ricochets back and you hit yourself. Apply the maximum damage to yourself as if you had hit your target."
+    },
+    {
+      "lowest":100,
+      "expletive": "Fuck.",
+      "result": "Your attack ricochets back and you hit yourself. Apply the maximum critical damage to yourself as if you had hit your target."
+    }
+  ]
+
+}
