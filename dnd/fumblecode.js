@@ -39,10 +39,7 @@ function initialize(){
                     seeAllEffects(data);
                 }
             })
-
-
     }
-
 
     function seeAllEffects(data){
 
