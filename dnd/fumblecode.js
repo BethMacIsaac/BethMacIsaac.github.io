@@ -103,7 +103,7 @@ function initialize(){
 
         data.effect.forEach(effect =>{
 
-            if(!effect.highest && (roll == effect.lowest)){
+            if(!effect.highest && (roll === effect.lowest)){
                 effectH2.textContent = effect.expletive;
                 effectP.textContent = effect.result;
             }
