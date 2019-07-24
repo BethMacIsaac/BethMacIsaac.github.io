@@ -4,7 +4,7 @@ window.addEventListener('load', getData);
 
 function getData() {
 
-    fetch('https://delivery.chalk247.com/team_list/NFL.JSON?api_key=74db8efa2a6db279393b433d97c2bc843f8e32b0')
+    fetch('http://delivery.chalk247.com/team_list/NFL.JSON?api_key=74db8efa2a6db279393b433d97c2bc843f8e32b0')
         .then(response => response.json)
         .then(teamData =>{
             console.log(teamData);
