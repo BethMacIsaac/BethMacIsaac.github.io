@@ -71,19 +71,20 @@ function initialize(){
                let titleTd = document.createElement('td');
                let effectTd = document.createElement('td');
 
-           if(effect.highest){
-               rangeTd.textContent = `${effect.lowest} - ${effect.highest}`;
-           }
-           else{
-               rangeTd.textContent = effect.lowest
-           }
+               if(effect.highest){
+                   rangeTd.textContent = `${effect.lowest} - ${effect.highest}`;
+               }
+               else{
+                   rangeTd.textContent = effect.lowest
+               }
 
-           titleTd.textContent = effect.expletive;
-           effectTd.textContent = effect.result;
+               titleTd.textContent = effect.expletive;
+               effectTd.textContent = effect.result;
 
-           tr.appendChild(rangeTd);
-           tr.appendChild(titleTd);
-           tr.appendChild(effectTd);
+               tr.appendChild(rangeTd);
+               tr.appendChild(titleTd);
+               tr.appendChild(effectTd);
+
            newTable.appendChild(tr);
 
          });
