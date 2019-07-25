@@ -35,6 +35,10 @@ nav{
 
 }
 
+label{
+    margin-top: 1em;
+}
+
 #highlightLabel{
     padding-top: 2em;
 }
@@ -49,6 +53,20 @@ table{
     width: 80%;
 }
 
-tr:hover{
-    background-color: aliceblue;
+table:hover{
+    cursor: crosshair;
+}
+
+
+th{
+    background-color: black;
+    color: aliceblue;
+}
+
+/*tr:hover{*/
+    /*background-color: aliceblue;*/
+/*}*/
+
+button{
+    margin-top: 1em;
 }

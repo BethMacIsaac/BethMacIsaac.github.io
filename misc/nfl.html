@@ -21,20 +21,22 @@
 
             <label for="conferenceSelect">Conference</label>
             <select name="conferenceSelect" id="conferenceSelect">
+                <option value="None">---</option>
                 <option value="AFC">AFC</option>
                 <option value="NFC">NFC</option>
             </select>
 
             <label for="divisionSelect">Division</label>
             <select name="divisionSelect" id="divisionSelect">
+                <option value="None">---</option>
                 <option value="North">North</option>
                 <option value="East">East</option>
                 <option value="South">South</option>
                 <option value="West">West</option>
             </select>
 
+            <button id="resetFilters" class="btn btn-info">Reset Filters</button>
 
-            <h2 id="highlightLabel">Highlight</h2>
         </nav>
 
         <article>

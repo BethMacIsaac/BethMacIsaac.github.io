@@ -5,6 +5,20 @@ window.addEventListener('load', getData);
 function getData() {
 
     let teamTable = document.querySelector('table');
+    let conferenceSelect = document.querySelector('#conferenceSelect');
+    let divisionSelect = document.querySelector('#divisionSelect');
+
+
+    let jsonData;
+
+
+    conferenceSelect.addEventListener('change', filterByLeague);
+    divisionSelect.addEventListener('change', filterByRegion);
+
+    document.querySelector('#resetFilters').addEventListener("click", resetRows);
+
+    let confFilter = "None";
+    let divFilter = "None";
 
     let rowList;
 
@@ -22,7 +36,8 @@ function getData() {
             }
         })
         .then(teamData =>{
-            showData(teamData);
+            jsonData = teamData;
+            showData(jsonData);
         });
 
 
@@ -38,8 +53,10 @@ function getData() {
             teamTd.textContent = team.nickname;
             let confTd = document.createElement('td');
             confTd.textContent = team.conference;
+            confTd.className = "confCell";
             let divisionTd = document.createElement('td');
             divisionTd.textContent = team.division;
+            divisionTd.className = "divCell";
 
 
             newRow.className = team.nickname;
@@ -51,11 +68,50 @@ function getData() {
             newRow.appendChild(confTd);
             newRow.appendChild(divisionTd);
 
+
             teamTable.appendChild(newRow);
+
         });
+
+
 
         rowList = document.querySelectorAll('tr');
 
+    }
+
+    function filterByLeague(){
+
+       confFilter = conferenceSelect.value;
+       console.log(confFilter);
+       let confTds = document.querySelectorAll(".confCell");
+
+        confTds.forEach(cell =>{
+            if (!(cell.textContent === confFilter)){
+                cell.parentElement.style.display = "none";
+            }
+        })
+    }
+
+    function filterByRegion(){
+
+        divFilter = divisionSelect.value;
+        console.log(divFilter);
+        let divTds = document.querySelectorAll(".divCell");
+
+        divTds.forEach(cell =>{
+            if (!(cell.textContent === divFilter)){
+                cell.parentElement.style.display = "none";
+            }
+        })
+
+    }
+
+    function resetRows(){
+        conferenceSelect.value = "None";
+        divisionSelect.value = "None";
+        rowList.forEach(row =>{
+            row.style.display = "table-row";
+        })
     }
 
     function highlightRow(rowClicked){
@@ -63,9 +119,11 @@ function getData() {
        let rowName= rowClicked.className;
 
        rowList.forEach(row =>{
-           if(row.className === rowName){
-
-               row.bgColor = "lightGreen";
+           if(row.className === rowName && !(row.bgColor == 'palegreen')){
+               row.bgColor = "palegreen";
+           }
+           else if (row.className === rowName && (row.bgColor == 'palegreen')){
+               row.bgColor="";
            }
        })
 
