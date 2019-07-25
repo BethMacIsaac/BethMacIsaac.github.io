@@ -3,16 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <title>NFL API</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="nflcode.js" type="text/javascript" async></script>
+    <link href="acme.css" rel="stylesheet">
+
 </head>
 <body>
 <main>
     <header>
         <h1>ACME NFL Datasheet</h1>
     </header>
-    <article>
 
-    </article>
+    <div id="content">
+        <nav id="filters">
+
+            <h2>Filters</h2>
+
+            <label for="conferenceSelect">Conference</label>
+            <select name="conferenceSelect" id="conferenceSelect">
+                <option value="AFC">AFC</option>
+                <option value="NFC">NFC</option>
+            </select>
+
+            <label for="divisionSelect">Division</label>
+            <select name="divisionSelect" id="divisionSelect">
+                <option value="North">North</option>
+                <option value="East">East</option>
+                <option value="South">South</option>
+                <option value="West">West</option>
+            </select>
+
+
+            <h2 id="highlightLabel">Highlight</h2>
+        </nav>
+
+        <article>
+
+            <table id="teamInfoTable" class="table">
+               <tr>
+                   <th>Home Base</th>
+                   <th>Team Name</th>
+                   <th>Conference</th>
+                   <th>Division</th>
+               </tr>
+            </table>
+        </article>
+    </div>
 </main>
 
 </body>
