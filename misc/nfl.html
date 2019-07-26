@@ -2,23 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>NFL API</title>
+    <meta name="robots" content="noindex">
+    <!--feels silly to both block access and add SEO, but this is how I would add SEO in plain HTML. Hit those keywords-->
+    <meta name="description" content="ACME Sports NFL datasheet. NFL sports data you can use. All your football needs">
+    <meta name="keywords" content="ACME sports, football, NFL football, NFL, teams, NFL teams, football teams, american football, sports, sports teams">
+    <meta name="viewport" content="width-device-width, initial-scale=1" />
+    <title>ACME Sports</title>
+    <!--linking to bootstrap for a basic style, though most of the css is my own, using flex-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--I included my js code as an external file, because it's cleaner and I was taught unobtrusive js is best practice-->
+    <!--I used an async tag on my script so my code only fires after the page is fully loaded (set up in js)-->
+    <!--I could also have put the script tag at the bottom, but I prefer this method-->
     <script src="nflcode.js" type="text/javascript" async></script>
+    <!--adding a google font-->
+    <link href="https://fonts.googleapis.com/css?family=Racing+Sans+One&display=swap" rel="stylesheet">
+    <!--my css file is also external, but that is pretty standard-->
     <link href="acme.css" rel="stylesheet">
 
 </head>
 <body>
 <main>
     <header>
-        <h1>ACME NFL Datasheet</h1>
+        <h1>ACME Sports NFL Datasheet</h1>
     </header>
 
     <div id="content">
         <nav id="filters">
 
-            <h2>Filters</h2>
+            <aside>
+                <!--Making sure my h1 and h2 tags have relevant keywords, unfortunately, my h3 is just for style-->
+                <!--Adding some basic usage instructions for the site's users-->
+                <h2>Welcome to the NFL Datasheet!</h2>
+                <p>Use the filters below to find your teams quicker.</p>
+                <p>Click on a team to highlight or unhighlight it.</p>
+                <p> Stats and rankings will be added as the season gets underway.</p>
+                <p>Go ahead! Get into in the game!</p>
+            </aside>
 
+            <!--These are the control boxes for my filters, they are stackable for easier navigation-->
+            <h3>Filters</h3>
             <label for="conferenceSelect">Conference</label>
             <select name="conferenceSelect" id="conferenceSelect">
                 <option value="None">---</option>
@@ -40,11 +62,12 @@
         </nav>
 
         <article>
-
+            <!--it is useful to hardcode as much as you can because generating unnecessary elements dynamically can be tedious-->
+            <!--so i scaffolded out my table-->
             <table id="teamInfoTable" class="table">
                <tr>
-                   <th>Home Base</th>
-                   <th>Team Name</th>
+                   <th>Team</th>
+                   <th>Name</th>
                    <th>Conference</th>
                    <th>Division</th>
                </tr>
