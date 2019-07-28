@@ -22,7 +22,7 @@ function main() {
     divisionSelect.addEventListener('change', filterByRegion);
 
     //click this button to reset all the filters and show the whole list
-    document.querySelector('#resetFilters').addEventListener("click", resetRows);
+    document.querySelector('#resetFilters').addEventListener('click', resetRows);
 
     //setting the filters to their default value, which is none
     let confFilter = "None";
@@ -48,7 +48,7 @@ function main() {
 
             //this produces my own error message if there is a problem with the api response.
             if (!response.ok){
-                console.log(`Sorry, unable to reach api right now. Please try again later.`);
+                console.log("Sorry, unable to reach api right now. Please try again later.");
             }
             else{
                 //if everything is ok, pass on the data
@@ -92,7 +92,7 @@ function main() {
             newRow.className = team.nickname;
             /*while I am creating the row, I add an event listener on the click event, to be more efficient
              i could have also done it after the fact. When I was learning JS, I learned the hard way that,
-             when passing an argument to a function you don't want to fire immediatly, it must be inside its
+            if you're passing an argument to a function and you don't want to fire immediately, the call must be inside its
              own callback function.*/
             newRow.addEventListener('click', ()=>{//anonymous callback function
                 highlightRow(newRow);//function I actually want to call on click
@@ -111,15 +111,14 @@ function main() {
         /*once the rows have been created create a nodeList of the rows I can reference
         later without having to use fetch again until the page is reloaded from browser*/
         rowList = document.querySelectorAll('tr');
-
     }//end of showData function
 
     //this function is called every time the confFilter select box changes. it hides the unwanted rows in the table
     function filterByLeague(){
-        //conf filter is the select box object that I grabbed in the parent function. I need the current value
+        //confFilter is the select box object that I grabbed in the parent function. I need the current value
        confFilter = conferenceSelect.value;
        //grab all my tds in the .confCell column
-       let confTds = document.querySelectorAll(".confCell");
+       let confTds = document.querySelectorAll('.confCell');
         confTds.forEach(cell =>{
             //iterate through the cells with the class .confCell and check if they match the filter selected (ie AMC or NFC)
             if(confFilter === "None"){
@@ -142,8 +141,8 @@ function main() {
                 if(!(divFilter === cell.nextSibling.textContent)) {
                     //hide the whole row if the cell in the division column doesn't match the active divFilter
                     cell.parentElement.style.display = "none";
-                }
-            }//end second if block
+                }//end second if block
+            }//end first if block
         });//end forEach
     }//end filterByLeague
 
@@ -152,7 +151,7 @@ function main() {
     function filterByRegion(){
         divFilter = divisionSelect.value;
         //using let or const rather than var for variables and constants limits variables to their current scope, rather than global scope
-        let divTds = document.querySelectorAll(".divCell");
+        let divTds = document.querySelectorAll('.divCell');
 
         divTds.forEach(cell => {
 
