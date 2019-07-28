@@ -4,7 +4,8 @@ Date: July 24-25, 2019
 Language: JavaScript (ES6)
 
 on the nfl.html file, I called this script asynchronously, so it would only run after the main page has loaded
-getData will be my main function and putting my code within this function will keep my variables out of the global scope*/
+putting my code within in the main function will keep my variables out of the global scope,
+ there are many way this is only one way to achieve this goal, but I like the readability of this one*/
 'use strict';
 window.addEventListener('load', main);
 
@@ -20,6 +21,7 @@ function main() {
     conferenceSelect.addEventListener('change', filterByLeague);
     divisionSelect.addEventListener('change', filterByRegion);
 
+    //click this button to reset all the filters and show the whole list
     document.querySelector('#resetFilters').addEventListener("click", resetRows);
 
     //setting the filters to their default value, which is none
