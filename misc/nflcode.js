@@ -4,7 +4,7 @@ Date: July 24-25, 2019
 Language: JavaScript (ES6)
 
 on the nfl.html file, I called this script asynchronously, so it would only run after the main page has loaded
-putting my code within in the main function will keep my variables out of the global scope,
+putting my code within the main function will keep my variables out of the global scope,
  there are many way this is only one way to achieve this goal, but I like the readability of this one*/
 'use strict';
 window.addEventListener('load', main);
