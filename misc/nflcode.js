@@ -43,7 +43,7 @@ function main() {
     // })
 
     //I made a json file called acmedata.json, that contains all the information I should have gotten from the API
-    fetch('/acmedata.json')
+    fetch('acmedata.json')
         .then(response => {
 
             //this produces my own error message if there is a problem with the api response.
