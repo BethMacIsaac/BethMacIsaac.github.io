@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name=”robots” content=”noindex”>
+    <!--don't want anyone to see this yet-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon App</title>
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Varela+Round&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+    <script src="code.js"></script> 
+    <main class="pkmnContentBody">
+        <header class="pkmnBanner">
+            <h1>Pokemon Lookup App</h1>
+        </header>
+
+        <!-- <nav class="navLinks">
+            <ul>
+                
+            </ul>
+        </nav> -->
+    
+        <article>
+
+          <div id="selectDiv">
+            <label for"pkmnInput">Enter a number between 1 and 1026:</label> 
+            <input type="text" id="pkmnInput">
+            <button type="button" id="pkmnSubmit">Submit</button>
+            <button type="button" id="pkmnRandom">Random</button>
+          </div> 
+
+          <div id="outputDiv">
+
+            <h2 id="pkmnName"></h2>
+            <ul id="pkmnTypes"></ul>
+            <img id="pkmnPic">
+            <p id="pkmnDex"></p>
+
+          </div>
+
+    
+        </article>
+        
+        </main>
+
+  </body>
+</html>
